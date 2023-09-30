@@ -46,6 +46,38 @@ These challenges prompted creative problem-solving and underscored the intricate
 - The game is in 2D.
 - Game has a constant ball speed.
 
+## Running the Project
+
+To run the project, follow these steps:
+
+1) Ensure you have the necessary dependencies installed:
+  - CMake (version 3.22 or higher)
+  - GLFW3 (version 3.3.6 or higher)
+  - OpenGL
+    
+2) Navigate to the project directory containing the following files:
+  - CMakeLists.txt
+  - glad.c
+  - glad.h
+  - khrplatform.h
+  - main.c
+    
+3) Open a terminal or command prompt in this directory.
+
+4) Execute the following commands:
+   
+   `cmake .`
+   
+   `make`
+
+These commands will generate the executable for the project.
+
+5) Once the compilation process is complete, run the executable using the following command:
+   
+   `./308Project`
+
+The game should now launch and display the intro screen.
+
 ## Side Notes
 
 During the development process, a specific gameplay issue was encountered that proved to be challenging to resolve. The problem arises when the ball makes direct contact with the top or bottom edge of the AI or player paddle. In this scenario, the ball's movement along the x-axis experiences consistent negation, resulting in jittery motion along the y-axis.
